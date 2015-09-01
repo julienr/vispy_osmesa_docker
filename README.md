@@ -1,7 +1,8 @@
 # Vispy OSMesa docker container
 
-This is a Dockerfile that builds a container with OSMesa to test vispy
-offscreen rendering.
+This is a Dockerfile that builds a docker container with OSMesa to test vispy
+offscreen rendering. Running in a docker container is a nice way to test
+that the osmesa vispy backend doesn't require an X server.
 
 Quick usage :
 
