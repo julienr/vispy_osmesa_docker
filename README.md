@@ -14,10 +14,6 @@ Quick usage :
 2. Start a bash shell in the container with `./run.sh`
 3. Run the simple_osmesa.py example 
     ```
-    VISPY_GL_LIB=/opt/osmesa_llvmpipe/lib/libGLESv2.so \
-    LD_LIBRARY_PATH=/opt/osmesa_llvmpipe/lib/ \
-    OSMESA_LIBRARY=/opt/osmesa_llvmpipe/lib/libOSMesa.so \
-    PYTHONPATH=/root/vispy \
     python examples/offscreen/simple_osmesa.py
     ```
 
