@@ -10,12 +10,7 @@ fi
 
 IMAGE_NAME="jrebetez/vispy_osmesa"
 
-PYTHON='VISPY_GL_LIB=/opt/osmesa_llvmpipe/lib/libGLESv2.so
-LD_LIBRARY_PATH=/opt/osmesa_llvmpipe/lib/
-OSMESA_LIBRARY=/opt/osmesa_llvmpipe/lib/libOSMesa.so
-PYTHONPATH=/root/vispy python'
-
-CMD="$PYTHON examples/offscreen/simple_osmesa.py"
+CMD="python examples/offscreen/simple_osmesa.py"
 
 echo "Once in bash, you can execute the osmesa demo with :"
 echo $CMD

@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo docker build -t="jrebetez/vispy_osmesa:v0" .
+sudo docker build -t="jrebetez/vispy_osmesa:latest" .

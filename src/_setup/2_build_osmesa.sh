@@ -5,7 +5,7 @@ cd $HOME
 tar -xvzf mesa-11.0.0-rc1.tar.gz
 pushd mesa-11.0.0-rc1
 autoreconf -fi
-
+  
 CC=clang CXX=clang ./configure \
     CXXFLAGS="-fPIC -O2 -g -DDEFAULT_SOFTWARE_DEPTH_BITS=31" \
     CFLAGS="-fPIC -O2 -g -DDEFAULT_SOFTWARE_DEPTH_BITS=31" \
@@ -13,12 +13,14 @@ CC=clang CXX=clang ./configure \
     --disable-xvmc \
     --disable-glx \
     --disable-dri \
+    --enable-opengl \
+    --disable-gles1 \
+    --disable-gles2 \
+    --disable-egl \
     --with-dri-drivers="" \
     --with-gallium-drivers="swrast" \
     --enable-texture-float \
     --enable-shared-glapi \
-    --disable-egl \
-    --with-egl-platforms="" \
     --enable-gallium-osmesa \
     --enable-gallium-llvm=yes \
     --prefix=/opt/osmesa_llvmpipe
