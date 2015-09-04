@@ -8,6 +8,7 @@ apt-get install -y build-essential \
                    git \
                    clang \
                    llvm-dev \
+                   fontconfig \
                    llvm-3.3-dev \
                    wget
 
