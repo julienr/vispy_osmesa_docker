@@ -16,7 +16,7 @@ RUN apt-get install -y build-essential \
                        fontconfig \
                        llvm-3.3-dev \
                        wget
-                       
+
 # Download OSMesa sources and GLU
 RUN wget ftp://ftp.freedesktop.org/pub/mesa/11.0.0/mesa-11.0.0-rc1.tar.gz -P /root \
     && wget ftp://ftp.freedesktop.org/pub/mesa/glu/glu-9.0.0.tar.gz -P /root
@@ -43,5 +43,5 @@ RUN apt-get install -y python-numpy \
                        python-pip \
                        python-nose \
                        python-nose2
-                       
-RUN pip install pytest-cov
+
+RUN pip install pytest-cov flake8
