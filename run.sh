@@ -10,10 +10,10 @@ fi
 
 IMAGE_NAME="jrebetez/vispy_osmesa"
 
-CMD="python examples/offscreen/simple_osmesa.py"
-
 echo "Once in bash, you can execute the osmesa demo with :"
-echo $CMD
+echo "  $ python examples/offscreen/simple_osmesa.py"
+echo "The tests with :"
+echo "  $ python make test osmesa"
 
 sudo docker run -it --rm --name vispy_osmesa \
     -w /root/vispy \
